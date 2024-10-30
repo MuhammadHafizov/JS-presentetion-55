@@ -1,32 +1,40 @@
-+ # Презентация: Объектҳо дар JavaScript
-# Слайд 1: Усулҳои асосии JavaScript
-![](https://th.bing.com/th/id/OIP.vjp6XouNipDUfGVXSYrhTQHaD2?rs=1&pid=ImgDetMain)
-+ ## JavaScript - забони барномасозии динамикӣ
-+ ## Объектҳо - сохторҳои муҳим барои ташкил ва идора кардани маълумот
-# Слайд 2: Объект чист? 
-![](https://th.bing.com/th/id/OIP.pbYOQTSE_570eEnx-KAKTQHaHa?rs=1&pid=ImgDetMain)
-+ ##  Объект - маҷмӯи хосиятҳо (properties) ва функсияҳо (methods)
-+ ##  Ҳар объект метавонад хосиятҳои махсус дошта бошад
-# Слайд 3: Чӣ гуна объект созем?
-+ ## javascript
-### Копировать код
-### let person = {
-###     name: "Алишер",
-###    age: 30,
-###    greet: function() {
-###        console.log("Салом, ман " + this.name);
-###    } 
+![](https://blog.alexdevero.com/wp-content/uploads/2020/02/10-02-20-javascript-objects-friendly-introduction-p1-blog.jpg)
+# tabele of contents
++ 01 Object
++ 02 Destructing
++ 03 Spread
++ this
+# Что такое object в javascript ?
++ **это набор свойств. Каждое свойство состоит из названия и значения. Название может быть строкой или символом, а значение может быть любым. Объекты в JavaScript используются повсюду, особенно для хранения данных**
+![](https://www.scientecheasy.com/wp-content/uploads/2022/03/javascript-object-example.png)
+### ```java
+### const car = {
+  ### type: "Fiat",
+  ### model: "500",
+  ### color: "white"
 ### };
-+ ## Дар ин ҷо, объект "person" бо хосиятҳои "name" ва "age" ва функсияи "greet" сохта шудааст.
- # Слайд 4: Варақи хосиятҳо  
-+ ## Варақи хосиятҳоро бо истифода аз точи "dot" ё "bracket" метавон дастрас намуд.
-+ ##  javascript
-### Копировать код
-### console.log(person.name); // Алишер
-### person.greet(); // Салом, ман Алишер
-#  Слайд 5: Функсияҳо дар объектҳо
-+ ## Объектҳо метавонанд функсияҳоро ҳамчун хосият қабул кунанд, ки ин онҳоро хеле қобилиятнок мекунад. 
-#  Слайд 6: Хулоса
-+ ## Объектҳо дар JavaScript барои ташкил ва идора кардани маълумот ва функсияҳо аҳамияти калон доранд.  
-+ ## Истифодаи объектҳо имкон медиҳад, ки барномаҳо мукаммал ва самаранок бошанд
-![](https://th.bing.com/th/id/OIP.eTIMflGdS2MmU0jLNCm4tAHaFc?rs=1&pid=ImgDetMain)
+# Методы
+## Методы — это функции, которые являются свойствами объекта:
+### const person = {
+  ### firstName: "John",
+  ### lastName: "Doe",
+  ### age: 30,
+  ### eyeColor: "blue",
+  ### fullName: function() {
+  ### return this.firstName + " " + this.lastName;
+ ### }
+### };
+# Object keys
++ ## Статический Object.keys()метод возвращает массив собственных перечислимых имен свойств заданного объекта, имеющих строковый ключ.
+### const object1 = {
+ ### a: 'somestring',
+ ### b: 42,
+ ### c: false,
+### };
+### console.log(Object.keys(object1));
+### // Expected output: Array ["a", "b", "c"]
+# Доступ к свойствам объекта
++ # Вы можете получить доступ к свойствам объекта, используя точечную нотацию или квадратные скобки:
+### console.log(person.name); // Точечная нотация
+### console.log(person["age"]); // Квадратные скобки
+![](https://marketplace.canva.com/EAFGH7TQKS8/3/0/1600w/canva-thank-you-card-uMCuw9XtkYc.jpg)
